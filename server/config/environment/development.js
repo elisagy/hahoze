@@ -6,7 +6,7 @@ module.exports = {
     // MongoDB connection options
     mongo: {
         useMongoClient: true,
-        uri: process.env.MONGODB_URI || 'mongodb://localhost/hachoze-dev'
+        uri: process.env.MONGODB_URI || 'mongodb://localhost/hahoze-dev'
     },
 
     // Seed database on startup
