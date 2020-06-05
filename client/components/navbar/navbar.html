@@ -19,7 +19,7 @@
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/signup">Sign up</a></li>
         <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/login">Login</a></li>
         <li [hidden]="!isLoggedIn"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
