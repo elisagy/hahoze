@@ -1,31 +1,127 @@
 <header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-  </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" *ngFor="let thing of awesomeThings">
-        <li><a  [tooltip]="thing.info">
-          {{thing.name}}
-          <button type="button" class="close" (click)="deleteThing(thing)">&times;</button>
-        </a></li>
-      </ul>
+    <div class="container">
+        <ul>
+            <li>בונים חוזה מדויק</li>
+            <li>מקבלים מקדמה</li>
+            <li>מתחילים לעבוד!</li>
+        </ul>
+        <a class="btn btn-custom" routerLink="/signup">הירשמו עכשיו!</a>
+        <p>לא עובדים לפני שהכסף אצלכם!</p>
     </div>
-  </div>
-
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." [(ngModel)]="newThing" name="thing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" (click)="addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
+</header>
+<div class="container">
+    <h1>המסלולים שלנו:</h1>
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-2 card">
+            <div class="card-body">
+                <h4>מסלול בסיס</h4>
+                <hr />
+                <ul>
+                    <li>
+                        ✓ 25 טפסים לחודש
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול לקוחות
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול כספים
+                    </li>
+                    <li>
+                        ✘ טפסים מיוחדים
+                    </li>
+                    <li>
+                        ✘ פגישת ייעוץ
+                    </li>
+                    <li>
+                        ✘ כניסה חינם להרצאות וימי עיון
+                    </li>
+                </ul>
+            </div>
+            <span class="input-group-btn">
+                <button class="btn">לרכישה >></button>
+            </span>
+        </div>
+        <div class="col-lg-2 card">
+            <div class="ribbon">
+                מומלץ!
+            </div>
+            <div class="card-body">
+                <h4>מסלול בסיס +</h4>
+                <hr />
+                <ul>
+                    <li>
+                        ✓ 25 טפסים לחודש
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול לקוחות
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול כספים
+                    </li>
+                    <li>
+                        ✓ טפסים מיוחדים
+                    </li>
+                    <li>
+                        ✘ פגישת ייעוץ
+                    </li>
+                    <li>
+                        ✘ כניסה חינם להרצאות וימי עיון
+                    </li>
+                </ul>
+            </div>
+            <span class="input-group-btn">
+                <button class="btn">לרכישה >></button>
+            </span>
+        </div>
+        <div class="col-lg-2 card">
+            <div class="card-body">
+                <h4>מסלול פרמיום</h4>
+                <hr />
+                <ul>
+                    <li>
+                        ✓ טפסים ללא הגבלה
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול לקוחות
+                    </li>
+                    <li>
+                        ✓ מערכת ניהול כספים
+                    </li>
+                    <li>
+                        ✓ ישיבת ייעוץ עם מנטור עבודה של "החוזה" פעם בשנה
+                    </li>
+                    <li>
+                        ✓ כניסה חינם להרצאות וימי עיון
+                    </li>
+                </ul>
+            </div>
+            <span class="input-group-btn">
+                <button class="btn">לרכישה >></button>
+            </span>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Features:</h1>
+            <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" *ngFor="let thing of awesomeThings">
+                <li><a [tooltip]="thing.info">
+                        {{thing.name}}
+                        <button type="button" class="close" (click)="deleteThing(thing)">&times;</button>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <form class="thing-form">
+        <label>Syncs in realtime across clients</label>
+        <p class="input-group">
+            <input type="text" class="form-control" placeholder="Add a new thing here." [(ngModel)]="newThing" name="thing">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary" (click)="addThing()">Add New</button>
+            </span>
+        </p>
+    </form> -->
 </div>

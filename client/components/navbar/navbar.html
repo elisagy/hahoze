@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">hahoze</a>
+      <a href="/" class="navbar-brand"><img src="assets/images/logo.png" alt="Hahoze"></a>
     </div>
     <div [collapse]="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
@@ -19,10 +19,10 @@
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-left">
-        <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/signup">Sign up</a></li>
-        <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/login">Login</a></li>
-        <li [hidden]="!isLoggedIn"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
+      <ul class="nav navbar-nav navbar-left navbar-custom">
+        <!-- <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/signup">Sign up</a></li> -->
+        <li [hidden]="isLoggedIn" routerLinkActive="active"><a routerLink="/login">כניסה</a></li>
+        <li [hidden]="!isLoggedIn"><p class="navbar-text">שלוםת  {{ currentUser.name }}</p> </li>
         <li [hidden]="!isLoggedIn" routerLinkActive="active"><a routerLink="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
         <li [hidden]="!isLoggedIn"><a (click)="logout()" style="cursor: pointer;">Log out</a></li>
       </ul>

@@ -6,11 +6,21 @@ import { AuthService } from '../auth/auth.service';
 @Component({
     selector: 'navbar',
     template: require('./navbar.html'),
+    styles: [require('./navbar.scss')]
 })
 export class NavbarComponent {
     isCollapsed = true;
     menu = [{
-        title: 'Home',
+        title: 'המסלולים שלנו',
+        'link': '/home',
+    }, {
+        title: 'למה החוזה?',
+        'link': '/home',
+    }, {
+        title: 'שאלות ותשובות',
+        'link': '/home',
+    }, {
+        title: 'צור קשר',
         'link': '/home',
     }];
     Router;

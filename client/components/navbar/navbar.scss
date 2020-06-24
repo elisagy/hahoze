@@ -1,0 +1,18 @@
+.navbar-brand {
+	height: 147px;
+}
+
+.nav.navbar-nav {
+	margin-top: 97px;
+
+	& > li {
+		& > a {
+			background-color: transparent;
+		}
+	}
+}
+
+.nav.navbar-custom > li > a {
+	background-color: #e8d2c9;
+	font-size: 2em;
+}
